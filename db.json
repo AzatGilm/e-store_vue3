@@ -1,0 +1,94 @@
+{
+  "products": [
+    { "image": "1.jpg",
+      "name": "T-shirt-1",
+      "price": 100,
+      "article": "T1",
+      "avialable": true
+    },
+    { "image": "2.jpg",
+      "name": "T-shirt-2",
+      "price": 200,
+      "article": "T2",
+      "avialable": true
+    },
+    { "image": "3.jpg",
+      "name": "T-shirt-3",
+      "price": 300,
+      "article": "T3",
+      "avialable": false
+    },
+    { "image": "4.jpg",
+      "name": "T-shirt-4",
+      "price": 200,
+      "article": "T4",
+      "avialable": true
+    },
+    { "image": "5.jpg",
+      "name": "T-shirt-5",
+      "price": 250,
+      "article": "T5",
+      "avialable": false
+    },
+    { "image": "6.jpg",
+      "name": "T-shirt-6",
+      "price": 300,
+      "article": "T6",
+      "avialable": false
+    },
+    { "image": "7.jpg",
+      "name": "T-shirt-7",
+      "price": 100,
+      "article": "T7",
+      "avialable": true
+    },
+    { "image": "8.jpg",
+      "name": "T-shirt-8",
+      "price": 300,
+      "article": "T8",
+      "avialable": true
+    },
+    { "image": "9.jpg",
+      "name": "T-shirt-9",
+      "price": 150,
+      "article": "T9",
+      "avialable": true
+    },
+    { "image": "10.jpg",
+      "name": "T-shirt-10",
+      "price": 100,
+      "article": "T10",
+      "avialable": true
+    },
+    { "image": "11.jpg",
+      "name": "T-shirt-11",
+      "price": 100,
+      "article": "T11",
+      "avialable": false
+    },
+    { "image": "12.jpg",
+      "name": "T-shirt-12",
+      "price": 100,
+      "article": "T12",
+      "avialable": true
+    },
+    { "image": "13.jpg",
+      "name": "T-shirt-13",
+      "price": 400,
+      "article": "T13",
+      "avialable": true
+    },
+    { "image": "14.jpg",
+      "name": "T-shirt-14",
+      "price": 150,
+      "article": "T14",
+      "avialable": true
+    },
+    { "image": "15.jpg",
+      "name": "T-shirt-15",
+      "price": 300,
+      "article": "T15",
+      "avialable": true
+    }    
+  ]
+}
