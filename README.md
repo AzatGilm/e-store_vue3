@@ -1,24 +1,12 @@
-# e-shop_vue3
+# e-shop_vue3 - интернет магазин(возможность добавления в корзину с разным количеством и суммой,возможность варьировать кол-во,фильтрация по цене,фильтрация по категории) с минимальной стилизацией.
 
-## Project setup
-```
-npm install
-```
+Для работы приложения:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. Приложение работает с фейковым сервером (https://github.com/typicode/json-server)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Необходимо его установить "npm install -g json-server"
 
-### Lints and fixes files
-```
-npm run lint
-```
+2. Для установки всех зависимостей "npm i"
+3. Запускаем json-server "json-server --watch db.json"
+4. В другом терминале запускаем "npm run serve"
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
