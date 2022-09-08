@@ -4,91 +4,106 @@
       "name": "T-shirt-1",
       "price": 100,
       "article": "T1",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "2.jpg",
       "name": "T-shirt-2",
       "price": 200,
       "article": "T2",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "3.jpg",
       "name": "T-shirt-3",
       "price": 300,
       "article": "T3",
-      "avialable": false
+      "avialable": false,
+      "category": "Женские"
     },
     { "image": "4.jpg",
       "name": "T-shirt-4",
       "price": 200,
       "article": "T4",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "5.jpg",
       "name": "T-shirt-5",
       "price": 250,
       "article": "T5",
-      "avialable": false
+      "avialable": false,
+      "category": "Женские"
     },
     { "image": "6.jpg",
       "name": "T-shirt-6",
       "price": 300,
       "article": "T6",
-      "avialable": false
+      "avialable": false,
+      "category": "Женские"
     },
     { "image": "7.jpg",
       "name": "T-shirt-7",
       "price": 100,
       "article": "T7",
-      "avialable": true
+      "avialable": true,
+      "category": "Женские"
     },
     { "image": "8.jpg",
       "name": "T-shirt-8",
       "price": 300,
       "article": "T8",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "9.jpg",
       "name": "T-shirt-9",
       "price": 150,
       "article": "T9",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "10.jpg",
       "name": "T-shirt-10",
       "price": 100,
       "article": "T10",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "11.jpg",
       "name": "T-shirt-11",
       "price": 100,
       "article": "T11",
-      "avialable": false
+      "avialable": false,
+      "category": "Женские"
     },
     { "image": "12.jpg",
       "name": "T-shirt-12",
       "price": 100,
       "article": "T12",
-      "avialable": true
+      "avialable": true,
+      "category": "Женские"
     },
     { "image": "13.jpg",
       "name": "T-shirt-13",
       "price": 400,
       "article": "T13",
-      "avialable": true
+      "avialable": true,
+      "category": "Женские"
     },
     { "image": "14.jpg",
       "name": "T-shirt-14",
       "price": 150,
       "article": "T14",
-      "avialable": true
+      "avialable": true,
+      "category": "Мужские"
     },
     { "image": "15.jpg",
       "name": "T-shirt-15",
       "price": 300,
       "article": "T15",
-      "avialable": true
+      "avialable": true,
+      "category": "Женские"
     }    
   ]
 }
