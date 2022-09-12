@@ -8,7 +8,7 @@
     <div class="filter">
       <v-select
         :options="categories"      
-        @update:model-value="sortByCategory"
+        @changeOpt="sortByOption"
       />
       <v-range-slider @setPrice="setRangeSlider"/>
     </div>
@@ -49,7 +49,7 @@ export default {
     selected: '',    
     sortedProducts: [],
     minCost: 0,
-    maxCost: 0
+    maxCost: 500
   }
  },
  methods: {
@@ -63,29 +63,26 @@ export default {
   routeToCart () {
     this.$router.push({ path: '/cart' })
   },
-  sortByCategory(option) {    
-    this.sortedProducts = [...this.products]
-
-    this.sortedProducts = this.sortedProducts.filter((item) => {
+  sortByCategory() {    
+    this.sortedProducts = [...this.products]    
+    
+    this.sortedProducts = this.sortedProducts.filter((item) => {      
       return item.price >= this.minCost && item.price <= this.maxCost
     })
-
-    if (option) {
-      this.sortedProducts = this.sortedProducts.filter((e) => {
-      return e.category === option.value
+    
+    if (this.selected && this.selected != 'Все') {      
+      this.sortedProducts = this.sortedProducts.filter((e) => {            
+      return e.category === this.selected      
     })
-    this.selected = option.value 
-    console.log(this.selected);
     }
   },
-  setRangeSlider (minPrice, maxPrice) {
+  setRangeSlider (minPrice, maxPrice) {          
     this.minCost = minPrice
     this.maxCost = maxPrice
-    if (this.minCost > this.maxCost) {
-      let tmp = this.minCost
-      this.minCost = this.maxCost
-      this.maxCost = tmp
-    }
+    this.sortByCategory()     
+  },
+  sortByOption (option) {
+    this.selected = option.value
     this.sortByCategory()
   }
  },
@@ -95,14 +92,16 @@ export default {
     'cart'
  ]),
  filteredProducts () {
-  return this.sortedProducts.length?this.sortedProducts:this.products
+  return this.sortedProducts.length ?this.sortedProducts:this.products
  }  
  },
  mounted () {
   this.GET_PRODUCTS_FROM_API()
-  .then(() => {
-    this.sortByCategory()
-  })
+  // .then((res) => {
+  //   if (res) {
+  //     this.sortedProducts = [...this.products]
+  //   }    
+  // })
  } 
 }
 </script>

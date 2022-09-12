@@ -5,7 +5,7 @@
       <option 
         v-for="option in options"
         :key="option.value"        
-        :value="option.name"
+        :value="option.name"        
         >
         {{option.name}}
       </option>
@@ -21,10 +21,7 @@ export default {
   props: { 
     options: {
       type: Array
-    },
-    modelValue: {
-      type: String
-    }
+    }  
   },
   data () {
     return {
@@ -33,7 +30,7 @@ export default {
   },
   methods: {
     selectOption (event) {
-      this.$emit('update:modelValue', event.target)
+      this.$emit('changeOpt', event.target)
     }
   }
 }

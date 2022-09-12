@@ -4,7 +4,7 @@
       <input 
         type="range" 
         min="0" 
-        max="1000" 
+        max="500" 
         step="10" 
         v-model.number="minPrice"
         @change="setRange"
@@ -12,7 +12,7 @@
       <input 
         type="range" 
         min="0" 
-        max="1000" 
+        max="500" 
         step="10" 
         v-model.number="maxPrice"
         @change="setRange"
@@ -32,11 +32,18 @@ export default {
  data () {
   return {
     minPrice: 0,
-    maxPrice: 1000
+    maxPrice: 500
   }
  },
  methods: {
   setRange () {
+    if (this.minPrice > this.maxPrice) {
+      let tmp = this.minPrice
+      this.minPrice = this.maxPrice
+      this.maxPrice = tmp
+    }
+
+
     this.$emit('setPrice', this.minPrice, this.maxPrice)
   }
  }

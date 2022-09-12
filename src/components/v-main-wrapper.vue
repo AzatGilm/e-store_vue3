@@ -1,8 +1,8 @@
 <template>
   <div class="v-main-wrapper"> 
-    <keep-alive>
+    
       <router-view ></router-view>
-    </keep-alive> 
+    
   </div>
 </template>
 
